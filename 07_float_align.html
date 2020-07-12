@@ -7,35 +7,46 @@
     <title>Float & Align</title>
 </head>
 <style>
-    *{
+    * {
         box-sizing: border-box;
     }
-    body{
+
+    .clr {
+        clear: both;
+    }
+
+    body {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.4em;
     }
+
     .container {
         max-width: 960px;
         margin: auto;
     }
-    .box{
+
+    .box {
         background-color: #f4f4f4;
         border: 1px solid #333333;
         padding: 20px;
         margin-bottom: 20px;
     }
-    .box p{
+
+    .box p {
         /* text align property */
-        text-align: left; /* default to left */
+        text-align: left;
+        /* default to left */
         text-align: right;
         text-align: center;
         text-align: justify;
     }
-    #box-two{
+
+    #box-two {
         width: 68%;
         float: left;
     }
-    #box-three{
+
+    #box-three {
         width: 30%;
         float: right;
     }
@@ -60,7 +71,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quaerat amet fuga possimus
                 eligendi distinctio aspernatur dignissimos expedita delectus debitis.</p>
         </div>
-
+        <div class="clear"></div>
         <div id="box-four" class="box">
             <h4>Heading</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quaerat amet fuga possimus
